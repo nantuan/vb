@@ -1,0 +1,70 @@
+name: versi baru
+on:
+  schedule:
+    - cron: 0 */6 * * *
+  workflow_dispatch:
+jobs:
+  ProsesBackup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.ssh }}
+        EOF
+    - name: Penyalina 0
+      run: |
+         rclone delete "del:" --drive-use-trash=false
+    - name: Penyalinan 1
+      run: |
+         rclone copy ssh1: copy1: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 2
+      run: |
+         rclone copy ssh2: copy2: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 3
+      run: |
+         rclone copy ssh3: copy3: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 4
+      run: |
+         rclone copy ssh4: copy4: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 5
+      run: |
+         rclone copy ssh5: copy5: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 6
+      run: |
+         rclone copy ssh6: copy6: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 7
+      run: |
+         rclone copy ssh7: copy7: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 8
+      run: |
+         rclone copy ssh8: copy8: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 9
+      run: |
+         rclone copy ssh9: copy9: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 10
+      run: |
+         rclone copy ssh10: copy10: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 11
+      run: |
+         rclone copy ssh11: copy11: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 12
+      run: |
+         rclone copy ssh12: copy12: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 13
+      run: |
+         rclone copy ssh13: copy13: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 14
+      run: |
+         rclone copy ssh14: copy14: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 15
+      run: |
+         rclone copy ssh15: copy15: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 16
+      run: |
+         rclone copy ssh16: copy16: --drive-server-side-across-configs --max-age 24h
+                  
