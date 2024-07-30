@@ -1,0 +1,19 @@
+name: DELETER
+on:
+  workflow_dispatch:
+jobs:
+  ProsesBackup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.ssh }}
+        EOF
+    - name: Penyalina 0
+      run: |
+         rclone delete "ssh1:" --drive-use-trash=false && rclone delete "ssh2:" --drive-use-trash=false && rclone delete "ssh3:" --drive-use-trash=false && rclone delete "ssh4:" --drive-use-trash=false && rclone delete "ssh5:" --drive-use-trash=false && rclone delete "ssh6:" --drive-use-trash=false && rclone delete "ssh7:" --drive-use-trash=false && rclone delete "ssh8:" --drive-use-trash=false && rclone delete "ssh9:" --drive-use-trash=false && rclone delete "ssh10:" --drive-use-trash=false && rclone delete "ssh11:" --drive-use-trash=false && rclone delete "ssh12:" --drive-use-trash=false && rclone delete "ssh13:" --drive-use-trash=false && rclone delete "ssh14:" --drive-use-trash=false && rclone delete "ssh15:" --drive-use-trash=false && rclone delete "ssh16:" --drive-use-trash=false
