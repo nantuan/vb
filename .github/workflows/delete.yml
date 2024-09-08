@@ -14,6 +14,78 @@ jobs:
         cat >  ~/.config/rclone/rclone.conf  << EOF
         ${{ secrets.ssh }}
         EOF
-    - name: Penyalina 0
+    - name: DELETE 1
       run: |
-         rclone delete "ssh1:" --drive-use-trash=false && rclone delete "ssh2:" --drive-use-trash=false && rclone delete "ssh3:" --drive-use-trash=false && rclone delete "ssh4:" --drive-use-trash=false && rclone delete "ssh5:" --drive-use-trash=false && rclone delete "ssh6:" --drive-use-trash=false && rclone delete "ssh7:" --drive-use-trash=false && rclone delete "ssh8:" --drive-use-trash=false && rclone delete "ssh9:" --drive-use-trash=false && rclone delete "ssh10:" --drive-use-trash=false && rclone delete "ssh11:" --drive-use-trash=false && rclone delete "ssh12:" --drive-use-trash=false && rclone delete "ssh13:" --drive-use-trash=false && rclone delete "ssh14:" --drive-use-trash=false && rclone delete "ssh15:" --drive-use-trash=false && rclone delete "ssh16:" --drive-use-trash=false
+         rclone delete "ssh1:" --drive-use-trash=false
+    - name: DELETE 2
+      run: |
+         rclone delete "ssh2:" --drive-use-trash=false
+    - name: DELETE 3
+      run: |
+         rclone delete "ssh3:" --drive-use-trash=false
+    - name: DELETE 4
+      run: |
+         rclone delete "ssh4:" --drive-use-trash=false
+    - name: DELETE 6
+      run: |
+         rclone delete "ssh6:" --drive-use-trash=false
+    - name: DELETE 7
+      run: |
+         rclone delete "ssh7:" --drive-use-trash=false
+    - name: DELETE 8
+      run: |
+         rclone delete "ssh8:" --drive-use-trash=false
+    - name: DELETE 9
+      run: |
+         rclone delete "ssh9:" --drive-use-trash=false
+    - name: DELETE 10
+      run: |
+         rclone delete "ssh10:" --drive-use-trash=false
+    - name: DELETE 11
+      run: |
+         rclone delete "ssh11:" --drive-use-trash=false
+    - name: DELETE 12
+      run: |
+         rclone delete "ssh12:" --drive-use-trash=false
+    - name: DELETE 13
+      run: |
+         rclone delete "ssh13:" --drive-use-trash=false
+    - name: DELETE 14
+      run: |
+         rclone delete "ssh14:" --drive-use-trash=false
+    - name: DELETE 15
+      run: |
+         rclone delete "ssh15:" --drive-use-trash=false
+    - name: DELETE 16
+      run: |
+         rclone delete "ssh16:" --drive-use-trash=false
+    - name: DELETE 17
+      run: |
+         rclone delete "ssh17:" --drive-use-trash=false
+    - name: DELETE 18
+      run: |
+         rclone delete "ssh18:" --drive-use-trash=false
+    - name: DELETE 19
+      run: |
+         rclone delete "ssh19:" --drive-use-trash=false
+    - name: DELETE 20
+      run: |
+         rclone delete "ssh20:" --drive-use-trash=false
+    - name: DELETE 21
+      run: |
+         rclone delete "ssh21:" --drive-use-trash=false
+    - name: DELETE 22
+      run: |
+         rclone delete "ssh22:" --drive-use-trash=false
+    - name: DELETE 23
+      run: |
+         rclone delete "ssh23:" --drive-use-trash=false
+    - name: DELETE 24
+      run: |
+         rclone delete "ssh24:" --drive-use-trash=false
+    - name: DELETE 25
+      run: |
+         rclone delete "ssh25:" --drive-use-trash=false
+    - name: DELETE 26
+      run: |
+         rclone delete "ssh26:" --drive-use-trash=false
