@@ -16,7 +16,7 @@ jobs:
         cat >  ~/.config/rclone/rclone.conf  << EOF
         ${{ secrets.ssh }}
         EOF
-    - name: Penyalina 0
+    - name: Penyalinan 0
       run: |
          rclone delete "del:" --drive-use-trash=false
     - name: Penyalinan 1
@@ -64,4 +64,34 @@ jobs:
     - name: Penyalinan 16
       run: |
          rclone copy ssh16: copy16: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 17
+      run: |
+         rclone copy ssh17: cop17: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 18
+      run: |
+         rclone copy ssh18: copy18: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 19
+      run: |
+         rclone copy ssh19: copy19: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 20
+      run: |
+         rclone copy ssh20: copy20: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 21
+      run: |
+         rclone copy ssh21: copy21: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 22
+      run: |
+         rclone copy ssh22: copy22: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 23
+      run: |
+         rclone copy ssh23: copy23: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 24
+      run: |
+         rclone copy ssh24: copy24: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 25
+      run: |
+         rclone copy ssh25: copy25: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 26
+      run: |
+         rclone copy ssh26: copy26: --drive-server-side-across-configs --max-age 24h
                   
