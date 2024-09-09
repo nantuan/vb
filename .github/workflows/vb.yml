@@ -113,4 +113,7 @@ jobs:
     - name: Penyalinan 32
       run: |
          rclone copy ssh32: copy32: --drive-server-side-across-configs --max-age 24h
-                  
+    - name: Penyalinan 33
+      run: |
+         rclone copy ssh33: copy33: --drive-server-side-across-configs --max-age 24h
+                                    
