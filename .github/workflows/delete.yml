@@ -92,3 +92,18 @@ jobs:
     - name: DELETE 27
       run: |
          rclone delete "ssh27:" --drive-use-trash=false
+    - name: DELETE 28
+      run: |
+         rclone delete "ssh28:" --drive-use-trash=false
+    - name: DELETE 29
+      run: |
+         rclone delete "ssh29:" --drive-use-trash=false
+    - name: DELETE 30
+      run: |
+         rclone delete "ssh30:" --drive-use-trash=false
+    - name: DELETE 31
+      run: |
+         rclone delete "ssh31:" --drive-use-trash=false
+    - name: DELETE 32
+      run: |
+         rclone delete "ssh32:" --drive-use-trash=false
