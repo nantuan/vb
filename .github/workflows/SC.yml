@@ -1,0 +1,24 @@
+name: SC Private
+on:
+  schedule:
+    - cron: 0 */6 * * *
+  workflow_dispatch:
+jobs:
+  ProsesBackup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.ssh }}
+        EOF
+    - name: Menghapus Data Lama
+      run: |
+         rclone delete "SC2:" --drive-use-trash=false
+    - name: Proses Penyalinan
+      run: |
+         rclone copy SC1: SC2: --drive-server-side-across-configs --max-age 24h
