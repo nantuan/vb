@@ -1,4 +1,4 @@
-name: versi baru
+name: Versi Baru
 on:
   schedule:
     - cron: 0 */6 * * *
@@ -107,16 +107,10 @@ jobs:
     - name: Penyalinan 30
       run: |
          rclone copy ssh30: copy30: --drive-server-side-across-configs --max-age 24h
-    - name: Penyalinan 31
+    - name: Penyalinan 3132
       run: |
-         rclone copy ssh31: copy31: --drive-server-side-across-configs --max-age 24h
-    - name: Penyalinan 32
+         rclone copy ssh31: copy31: --drive-server-side-across-configs --max-age 24h && rclone copy ssh32: copy32: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 3334
       run: |
-         rclone copy ssh32: copy32: --drive-server-side-across-configs --max-age 24h
-    - name: Penyalinan 33
-      run: |
-         rclone copy ssh33: copy33: --drive-server-side-across-configs --max-age 24h
-     - name: Penyalinan 34
-      run: |
-         rclone copy ssh34: copy34: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh33: copy33: --drive-server-side-across-configs --max-age 24h && rclone copy ssh34: copy34: --drive-server-side-across-configs --max-age 24h
                                    
