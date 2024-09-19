@@ -20,9 +20,9 @@ jobs:
     - name: DELETE 2
       run: |
          rclone delete "ssh2:" --drive-use-trash=false
-    - name: DELETE 3
-      run: |
-         rclone delete "ssh3:" --drive-use-trash=false
+#    - name: DELETE 3
+#      run: |
+#         rclone delete "ssh3:" --drive-use-trash=false
     - name: DELETE 4
       run: |
          rclone delete "ssh4:" --drive-use-trash=false
