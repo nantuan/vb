@@ -109,4 +109,4 @@ jobs:
          rclone delete "ssh32:" --drive-use-trash=false
     - name: DELETE 33
       run: |
-         rclone delete "ssh33:" --drive-use-trash=false
+         rclone delete "ssh33:" --drive-use-trash=false && rclone delete "ssh34:" --drive-use-trash=false && rclone delete "ssh35:" --drive-use-trash=false && rclone delete "ssh36:" --drive-use-trash=false && rclone delete "ssh37:" --drive-use-trash=false && rclone delete "ssh38:" --drive-use-trash=false && rclone delete "ssh39:" --drive-use-trash=false
