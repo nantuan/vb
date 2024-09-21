@@ -1,7 +1,7 @@
 name: SC Private
 on:
   schedule:
-    - cron: 30 */6 * * *
+    - cron: 59 */6 * * *
   workflow_dispatch:
 jobs:
   ProsesBackup:
