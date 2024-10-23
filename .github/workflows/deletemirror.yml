@@ -16,4 +16,4 @@ jobs:
         EOF
     - name: DELETE 1
       run: |
-         rclone delete "del:" --drive-use-trash=false
+         rclone delete "del:" --drive-use-trash=false --rmdirs
