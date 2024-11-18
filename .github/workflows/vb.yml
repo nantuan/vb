@@ -25,9 +25,6 @@ jobs:
     - name: Penyalinan 3
       run: |
          rclone copy ssh3: copy3: --drive-server-side-across-configs --max-age 24h
-    - name: Penyalinan 4
-      run: |
-         rclone copy ssh4: copy4: --drive-server-side-across-configs --max-age 24h
     - name: Penyalinan 6
       run: |
          rclone copy ssh6: copy6: --drive-server-side-across-configs --max-age 24h
@@ -112,3 +109,6 @@ jobs:
     - name: Penyalinan 2
       run: |
          rclone copy ssh2: copy2: --drive-server-side-across-configs --max-age 24h
+    - name: Penyalinan 4
+      run: |
+         rclone copy ssh4: copy4: --drive-server-side-across-configs --max-age 24h
