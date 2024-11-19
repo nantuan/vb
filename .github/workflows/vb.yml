@@ -60,7 +60,7 @@ jobs:
 #         rclone copy ssh16: copy16: --drive-server-side-across-configs --max-age 24h
     - name: Penyalinan 17
       run: |
-         rclone copy ssh17: copy17: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh17: copy17: --max-age 24h
     - name: Penyalinan 18
       run: |
          rclone copy ssh18: copy18: --drive-server-side-across-configs --max-age 24h
@@ -108,7 +108,7 @@ jobs:
          rclone copy ssh37: copy37: --drive-server-side-across-configs --max-age 24h && rclone copy ssh38: copy38: --drive-server-side-across-configs --max-age 24h && rclone copy ssh39: copy39: --drive-server-side-across-configs --max-age 24h 
     - name: Penyalinan 2
       run: |
-         rclone copy ssh2: copy2: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh2: copy2: --max-age 24h
     - name: Penyalinan 4
       run: |
-         rclone copy ssh4: copy4: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh4: copy4: --max-age 24h
