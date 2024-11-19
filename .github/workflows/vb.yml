@@ -21,94 +21,94 @@ jobs:
          rclone delete "del:" --drive-use-trash=false
     - name: Penyalinan 1
       run: |
-         rclone copy ssh1: copy1: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh1: copy1: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 3
       run: |
-         rclone copy ssh3: copy3: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh3: copy3: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 6
       run: |
-         rclone copy ssh6: copy6: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh6: copy6: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 7
       run: |
-         rclone copy ssh7: copy7: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh7: copy7: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 8
       run: |
-         rclone copy ssh8: copy8: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh8: copy8: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 9
       run: |
-         rclone copy ssh9: copy9: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh9: copy9: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 10
       run: |
-         rclone copy ssh10: copy10: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh10: copy10: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 11
       run: |
-         rclone copy ssh11: copy11: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh11: copy11: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 12
       run: |
-         rclone copy ssh12: copy12: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh12: copy12: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 13
       run: |
-         rclone copy ssh13: copy13: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh13: copy13: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 14
       run: |
-         rclone copy ssh14: copy14: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh14: copy14: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 15
       run: |
-         rclone copy ssh15: copy15: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh15: copy15: --drive-server-side-across-configs --max-age 24h --ignore-errors
 #    - name: Penyalinan 16
 #      run: |
-#         rclone copy ssh16: copy16: --drive-server-side-across-configs --max-age 24h
+#         rclone copy ssh16: copy16: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 17
       run: |
-         rclone copy ssh17: copy17: --max-age 24h
+         rclone copy ssh17: copy17: -drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 18
       run: |
-         rclone copy ssh18: copy18: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh18: copy18: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 19
       run: |
-         rclone copy ssh19: copy19: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh19: copy19: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 20
       run: |
-         rclone copy ssh20: copy20: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh20: copy20: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 21
       run: |
-         rclone copy ssh21: copy21: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh21: copy21: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 22
       run: |
-         rclone copy ssh22: copy22: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh22: copy22: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 23
       run: |
-         rclone copy ssh23: copy23: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh23: copy23: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 24
       run: |
-         rclone copy ssh24: copy24: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh24: copy24: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 25
       run: |
-         rclone copy ssh25: copy25: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh25: copy25: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 26
       run: |
-         rclone copy ssh26: copy26: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh26: copy26: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 2728
       run: |
-         rclone copy ssh27: copy27: --drive-server-side-across-configs --max-age 24h && rclone copy ssh28: copy28: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh27: copy27: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh28: copy28: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 2930
       run: |
-         rclone copy ssh29: copy29: --drive-server-side-across-configs --max-age 24h && rclone copy ssh30: copy30: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh29: copy29: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh30: copy30: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 3132
       run: |
-         rclone copy ssh31: copy31: --drive-server-side-across-configs --max-age 24h && rclone copy ssh32: copy32: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh31: copy31: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh32: copy32: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 3334
       run: |
-         rclone copy ssh33: copy33: --drive-server-side-across-configs --max-age 24h && rclone copy ssh34: copy34: --drive-server-side-across-configs --max-age 24h
+         rclone copy ssh33: copy33: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh34: copy34: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 3536
       run: |
-         rclone copy ssh35: copy35: --drive-server-side-across-configs --max-age 24h && rclone copy ssh36: copy36: --drive-server-side-across-configs --max-age 24h 
+         rclone copy ssh35: copy35: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh36: copy36: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 373839
       run: |
-         rclone copy ssh37: copy37: --drive-server-side-across-configs --max-age 24h && rclone copy ssh38: copy38: --drive-server-side-across-configs --max-age 24h && rclone copy ssh39: copy39: --drive-server-side-across-configs --max-age 24h 
+         rclone copy ssh37: copy37: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh38: copy38: --drive-server-side-across-configs --max-age 24h --ignore-errors && rclone copy ssh39: copy39: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 2
       run: |
-         rclone copy ssh2: copy2: --max-age 24h
+         rclone copy ssh2: copy2: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 4
       run: |
-         rclone copy ssh4: copy4: --max-age 24h
+         rclone copy ssh4: copy4: --drive-server-side-across-configs --max-age 24h --ignore-errors
