@@ -1,4 +1,4 @@
-name: DELETER MIRTOR
+name: DELETER MIRROR
 on:
   schedule:
     - cron: 0 23 * * *
