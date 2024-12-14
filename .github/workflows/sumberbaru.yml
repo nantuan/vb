@@ -1,4 +1,4 @@
-name: Versi Baru
+name: SumberBaru
 on:
   schedule:
     - cron: 0 */6 * * *
