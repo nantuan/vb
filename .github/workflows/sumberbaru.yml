@@ -34,6 +34,6 @@ jobs:
     - name: Penyalinan 5
       run: |
          rclone copy S5: D5: --drive-server-side-across-configs --ignore-errors
-    - name: Penyalinan 6
-      run: |
-         rclone copy S6: D6: --drive-server-side-across-configs --ignore-errors
+#    - name: Penyalinan 6 (token expired)
+#      run: |
+#         rclone copy S6: D6: --drive-server-side-across-configs --ignore-errors
