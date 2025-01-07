@@ -1,4 +1,4 @@
-name: SumberBaru
+name: Sumber Baru
 on:
   schedule:
     - cron: 0 */6 * * *
@@ -16,12 +16,24 @@ jobs:
         cat >  ~/.config/rclone/rclone.conf  << EOF
         ${{ secrets.baru }}
         EOF
-#    - name: Cleaning 0
-#      run: |
-#         rclone delete "del:" --drive-use-trash=false
+    - name: Cleaning 0
+      run: |
+         rclone delete "del:" --drive-use-trash=false
     - name: Penyalinan 1
       run: |
          rclone copy S1: D1: --drive-server-side-across-configs --ignore-errors
     - name: Penyalinan 2
       run: |
          rclone copy S2: D2: --drive-server-side-across-configs --ignore-errors
+    - name: Penyalinan 3
+      run: |
+         rclone copy S3: D3: --drive-server-side-across-configs --ignore-errors
+    - name: Penyalinan 4
+      run: |
+         rclone copy S4: D4: --drive-server-side-across-configs --ignore-errors
+    - name: Penyalinan 5
+      run: |
+         rclone copy S5: D5: --drive-server-side-across-configs --ignore-errors
+    - name: Penyalinan 6
+      run: |
+         rclone copy S6: D6: --drive-server-side-across-configs --ignore-errors
