@@ -37,3 +37,21 @@ jobs:
 #    - name: Penyalinan 6 (token expired)
 #      run: |
 #         rclone copy S6: D6: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 7
+      run: |
+         rclone copy S7: D7: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 8
+      run: |
+         rclone copy S8: D8: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 9
+      run: |
+         rclone copy S9: D9: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 10
+      run: |
+         rclone copy S10: D10: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 11
+      run: |
+         rclone copy S11: D11: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 12
+      run: |
+         rclone copy S12: D12: --drive-server-side-across-configs --ignore-errors --max-age 24h
