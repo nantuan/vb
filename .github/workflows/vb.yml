@@ -19,9 +19,9 @@ jobs:
     - name: Penyalinan 0
       run: |
          rclone delete "del:" --drive-use-trash=false
-    - name: Penyalinan 1
-      run: |
-         rclone copy ssh1: copy1: --drive-server-side-across-configs --max-age 24h --ignore-errors
+#    - name: Penyalinan 1
+#      run: |
+#         rclone copy ssh1: copy1: --drive-server-side-across-configs --max-age 24h --ignore-errors
     - name: Penyalinan 3
       run: |
          rclone copy ssh3: copy3: --drive-server-side-across-configs --max-age 24h --ignore-errors
